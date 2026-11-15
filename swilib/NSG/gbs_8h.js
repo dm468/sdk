@@ -38,6 +38,8 @@ var gbs_8h =
     [ "GBS_SendMessage", "group___g_b_s.html#ga82f00b61e57a70765cdbbc8d2efb189f", null ],
     [ "GBS_ReciveMessage", "group___g_b_s.html#gac7a3377cf275357cc1a037b54eab6352", null ],
     [ "GBS_RecActDstMessage", "group___g_b_s.html#gae99584ad2b71cf10cb600af9b9bf0e88", null ],
+    [ "GBS_CreateMsg", "group___g_b_s.html#ga35125d6103bf72d885a4bd0a9e96b1aa", null ],
+    [ "GBS_PostMsg", "group___g_b_s.html#ga52fe0bec3d323887f49de063dd8818bd", null ],
     [ "GBS_AcceptMessage", "group___g_b_s.html#ga751070ca379cfe601fe8ad6694624927", null ],
     [ "GBS_ClearMessage", "group___g_b_s.html#gafe9775d061dfb7887bb0470ba3dc73d0", null ],
     [ "GBS_PendMessage", "group___g_b_s.html#gaebf7f154a4c3f04142e6e7ada1a718bf", null ],

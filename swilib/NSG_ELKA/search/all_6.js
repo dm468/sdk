@@ -117,9 +117,10 @@ var searchData=
   ['freews_114',['FreeWS',['../group___w_s_h_d_r.html#ga83da28feb6a9675353bfcbabb5aa1014',1,'wstring.h']]],
   ['freews_5f2_115',['FreeWS_2',['../group___l_e_g_a_c_y.html#gab6cd57f4117d9b9bf20e242cc27921ad',1,'legacy.h']]],
   ['frequency_116',['frequency',['../builtin_2png_8h.html#ad8095a15bb5a054c12ef911478c5f3a3',1,'png_sPLT_entry_struct']]],
-  ['fstats_117',['FSTATS',['../group___file.html#struct_f_s_t_a_t_s',1,'FSTATS'],['../group___file.html#ga1e77b4d2dc71903e1178c3478e40899e',1,'FSTATS:&#160;file.h']]],
-  ['full_5ffilename_118',['full_filename',['../group___explorer.html#a1758b74735e4c933b14e374aeb21b28c',1,'NativeExplorerData']]],
-  ['fullname_119',['fullname',['../x509v3_8h.html#aa52c38ff3b6725b04de52ceb0dd18f72',1,'DIST_POINT_NAME_st']]],
-  ['func_120',['func',['../group___o_b_s.html#aeb3e2c0d81c754c2687640e92928e150',1,'OBSevent']]],
-  ['fwrite_121',['fwrite',['../group___file.html#gaee40b8f8ad394f1a8d491d9ada7ad2b2',1,'file.h']]]
+  ['fs_5fmemalloc_117',['FS_MemAlloc',['../group___file.html#gafd177981f41dfbd0c68161793076e555',1,'file.h']]],
+  ['fstats_118',['FSTATS',['../group___file.html#struct_f_s_t_a_t_s',1,'FSTATS'],['../group___file.html#ga1e77b4d2dc71903e1178c3478e40899e',1,'FSTATS:&#160;file.h']]],
+  ['full_5ffilename_119',['full_filename',['../group___explorer.html#a1758b74735e4c933b14e374aeb21b28c',1,'NativeExplorerData']]],
+  ['fullname_120',['fullname',['../x509v3_8h.html#aa52c38ff3b6725b04de52ceb0dd18f72',1,'DIST_POINT_NAME_st']]],
+  ['func_121',['func',['../group___o_b_s.html#aeb3e2c0d81c754c2687640e92928e150',1,'OBSevent']]],
+  ['fwrite_122',['fwrite',['../group___file.html#gaee40b8f8ad394f1a8d491d9ada7ad2b2',1,'file.h']]]
 ];
