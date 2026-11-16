@@ -217,6 +217,12 @@ Enumerations</h2></td></tr>
 <tr class="memitem:gae99584ad2b71cf10cb600af9b9bf0e88" id="r_gae99584ad2b71cf10cb600af9b9bf0e88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae99584ad2b71cf10cb600af9b9bf0e88">GBS_RecActDstMessage</a> (<a class="el" href="#struct_g_b_s___m_s_g">GBS_MSG</a> *msg)</td></tr>
 <tr class="memdesc:gae99584ad2b71cf10cb600af9b9bf0e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a message from the queue without auto-ACK.  <br /></td></tr>
 <tr class="separator:gae99584ad2b71cf10cb600af9b9bf0e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f8b941831defc3ca1eeff243d0b7b85" id="r_ga0f8b941831defc3ca1eeff243d0b7b85"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0f8b941831defc3ca1eeff243d0b7b85">GBS_GetMsgPayload</a> (<a class="el" href="#struct_g_b_s___m_s_g">GBS_MSG</a> *msg)</td></tr>
+<tr class="memdesc:ga0f8b941831defc3ca1eeff243d0b7b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native payload view of a received GBS message.  <br /></td></tr>
+<tr class="separator:ga0f8b941831defc3ca1eeff243d0b7b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1850807f0de118a07272088652a3713" id="r_gad1850807f0de118a07272088652a3713"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#struct_p_g_r_o_u_p">PGROUP</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad1850807f0de118a07272088652a3713">GBS_GetProcGroup</a> (int cepid)</td></tr>
+<tr class="memdesc:gad1850807f0de118a07272088652a3713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a GBS process group.  <br /></td></tr>
+<tr class="separator:gad1850807f0de118a07272088652a3713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga35125d6103bf72d885a4bd0a9e96b1aa" id="r_ga35125d6103bf72d885a4bd0a9e96b1aa"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga35125d6103bf72d885a4bd0a9e96b1aa">GBS_CreateMsg</a> (void **msg, int cepid_to, int msg_id, int size)</td></tr>
 <tr class="memdesc:ga35125d6103bf72d885a4bd0a9e96b1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a GBS message (the kernel's own format, as the firmware's drivers post their replies).  <br /></td></tr>
 <tr class="separator:ga35125d6103bf72d885a4bd0a9e96b1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -766,6 +772,58 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>count of messages in the queue </dd></dl>
+
+</div>
+</div>
+<a id="ga0f8b941831defc3ca1eeff243d0b7b85" name="ga0f8b941831defc3ca1eeff243d0b7b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f8b941831defc3ca1eeff243d0b7b85">&#9670;&#160;</a></span>GBS_GetMsgPayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ** GBS_GetMsgPayload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#struct_g_b_s___m_s_g">GBS_MSG</a> *</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the native payload view of a received GBS message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>received GBS message </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>firmware-owned payload view. Do not free or retain it after consuming the message </dd></dl>
+
+</div>
+</div>
+<a id="gad1850807f0de118a07272088652a3713" name="gad1850807f0de118a07272088652a3713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad1850807f0de118a07272088652a3713">&#9670;&#160;</a></span>GBS_GetProcGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#struct_p_g_r_o_u_p">PGROUP</a> * GBS_GetProcGroup </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>cepid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find a GBS process group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cepid</td><td>CEPID whose group (cepid &amp; 0xFF00) is looked up </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>process group, or NULL if the group does not exist </dd></dl>
 
 </div>
 </div>
